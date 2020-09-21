@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>davepruphoto.com</title>
+    <style type="text/css">
+    
+    .colonne {
+    margin: 15px 25px 0 25px;
+    padding: 0;
+}
+
+.colonne:last-child {
+    padding-bottom: 60px;
+}
+
+.colonne::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.colonne div {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 250px;
+    margin: 0 0 0 35px;
+    padding: 0;
+}
+
+.colonne div:first-child {
+    margin-left: 0;
+}
+
+div {
+    width: 1000px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    background: #F4F4F4;
+    overflow: hidden;
+}
+
+.zoom div img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.zoom div:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.zoom div img {
+    width: 130px;
+    display: table-column;
+}
+
+
+/* Rotation */
+
+
+/*
+.rotate div img {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.rotate div:hover img {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+*/
+    
+    </style>
+
+</head>
+
+<body>
+    <div class="zoom colonne">
+        <div>
+            <div><img src="im1.jpg" /></div>
+        </div>
+        <div>
+            <div><img src="im2.jpg" /></div>
+        </div>
+        <div>
+            <div><img src="im3.jpg" /></div>
+        </div>
+        <div>
+            <div><img src="im4.jpg" /></div>
+        </div>
+        <div>
+            <div><img src="im5.jpg" /></div>
+        </div>
+        <div>
+            <div><img src="im6.jpg" /></div>
+        </div>
+        <div>
+            <div><img src="im7.jpg" /></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
